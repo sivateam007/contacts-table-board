@@ -1,0 +1,123 @@
+import type { Contact } from '../types';
+
+/**
+ * Fictional dataset (10 contacts) used by both views.
+ *
+ * Deliberate edge cases for the evaluation brief:
+ * - "Qualified" is left empty so the board shows an empty group.
+ * - Missing optional data: one contact has no email, two have no company/role
+ *   coverage gaps, several have no labels and no notes.
+ */
+export const CONTACTS: Contact[] = [
+  {
+    id: 'c-maya',
+    name: 'Maya Fernandez',
+    email: 'maya.fernandez@northwind.example',
+    company: 'Northwind Labs',
+    role: 'Head of Operations',
+    owner: 'Priya Raman',
+    labels: ['Referral', 'SaaS'],
+    stage: 'Lead',
+    notes:
+      'Introduced by Arun. Runs a 40-person ops team and wants to replace three shared spreadsheets before Q3 planning.',
+  },
+  {
+    id: 'c-daniel',
+    name: 'Daniel Osei',
+    email: 'daniel.osei@independent.example',
+    company: '',
+    role: 'Independent consultant',
+    owner: 'Arun Menon',
+    labels: [],
+    stage: 'Lead',
+    notes: '',
+  },
+  {
+    id: 'c-sofia',
+    name: 'Sofia Kraus',
+    email: 'sofia.kraus@kestrel.example',
+    company: 'Kestrel Health',
+    role: '',
+    owner: "Leena D'Souza",
+    labels: ['Inbound'],
+    stage: 'Lead',
+    notes: 'Filled the demo form twice in one week. Discovery call booked for Thursday — ask about their procurement steps.',
+  },
+  {
+    id: 'c-ibrahim',
+    name: 'Ibrahim Farouk',
+    email: '',
+    company: 'Cobalt Logistics',
+    role: 'Procurement Lead',
+    owner: 'Priya Raman',
+    labels: ['Event'],
+    stage: 'Lead',
+    notes: 'Met at LogiExpo — badge scan only, no email yet. Leena has the introduction thread.',
+  },
+  {
+    id: 'c-tomas',
+    name: 'Tomás Herrera',
+    email: 'tomas.herrera@marigold.example',
+    company: 'Marigold Retail',
+    role: 'IT Manager',
+    owner: 'Arun Menon',
+    labels: [],
+    stage: 'Prospect',
+    notes: 'Pilot agreed for two stores. Needs SSO before a wider rollout.',
+  },
+  {
+    id: 'c-aiko',
+    name: 'Aiko Tanaka',
+    email: 'aiko.tanaka@quill.example',
+    company: 'Quill & Co',
+    role: 'Operations Lead',
+    owner: "Leena D'Souza",
+    labels: ['SaaS', 'Partner'],
+    stage: 'Prospect',
+    notes: '',
+  },
+  {
+    id: 'c-grace',
+    name: 'Grace Whitfield',
+    email: 'grace.whitfield@bluefin.example',
+    company: 'Bluefin Analytics',
+    role: '',
+    owner: 'Priya Raman',
+    labels: ['Inbound', 'Expansion'],
+    stage: 'Prospect',
+    notes: 'Evaluating us against a template her team built in a spreadsheet. Cares most about switching views without losing context.',
+  },
+  {
+    id: 'c-ravi',
+    name: 'Ravi Subramanian',
+    email: 'ravi.subramanian@ridgeline.example',
+    company: 'Ridgeline Media',
+    role: 'Deputy Editor',
+    owner: 'Arun Menon',
+    labels: [],
+    stage: 'Prospect',
+    notes: 'Wants one shared board for freelance budgets; currently split across email threads.',
+  },
+  {
+    id: 'c-elena',
+    name: 'Elena Petrova',
+    email: 'elena.petrova@solaris.example',
+    company: 'Solaris Energy',
+    role: 'VP Marketing',
+    owner: "Leena D'Souza",
+    labels: ['Renewal'],
+    stage: 'Customer',
+    notes: 'Renewed in March. Asked for quarterly business reviews and a shared escalation channel.',
+  },
+  {
+    id: 'c-noah',
+    name: 'Noah Kim',
+    email: 'noah.kim@tidewater.example',
+    company: 'Tidewater Foods',
+    role: 'Supply Chain Manager',
+    owner: 'Priya Raman',
+    labels: ['Expansion'],
+    stage: 'Customer',
+    notes: 'Rolling out to the warehouse team next quarter; wants an import from their existing sheet.',
+  },
+];

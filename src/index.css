@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+/*
+  Global keyboard affordance: every interactive element gets the same visible
+  focus ring, so keyboard users never have to guess where they are. Individual
+  components don't need to repeat focus styles.
+*/
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-blue-600, #2563eb);
+  outline-offset: 2px;
+}
+
+body {
+  background-color: var(--color-gray-50, #f9fafb);
+  color: var(--color-gray-900, #111827);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
