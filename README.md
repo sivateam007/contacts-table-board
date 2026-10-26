@@ -2,6 +2,8 @@
 
 Take-home exercise: two working views (table + board) over one shared dataset of fictional contacts, with a shared details panel that edits Stage and Notes from either view.
 
+**Live preview:** https://sivateam007.github.io/contacts-table-board/ · **Code:** https://github.com/sivateam007/contacts-table-board
+
 ## Preview
 
 **Table** — responsive columns, single-line rows, missing data as an em dash:
